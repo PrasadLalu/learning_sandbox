@@ -1,9 +1,12 @@
-import { Router, Request, Response } from 'express';
+import { Router, Request, Response } from "express";
+import userRouter from "./user";
 
 const router = Router();
 
-router.get('/health-check', (req: Request, res: Response) => {
-    return res.send({ message: 'Healthy!' });
+router.use("/user", userRouter);
+
+router.get("/health-check", (req: Request, res: Response) => {
+    return res.send({ message: "Healthy!" });
 });
 
-export default router
+export default router;

@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-kafka-multiple-consumers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon",
+    "producer": "ts-node src/producer.ts",
+    "consumer1": "ts-node src/consumer1.ts",
+    "consumer2": "ts-node src/consumer2.ts",
+    "consumer3": "ts-node src/consumer3.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
